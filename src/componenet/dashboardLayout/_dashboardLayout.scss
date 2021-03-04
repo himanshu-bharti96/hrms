@@ -9,14 +9,54 @@
         max-width: 250px;
         min-width: 200px;
         background-color:$hr_background;
-        
+        margin-left: 16px;
+        .logo-container{
+            text-align: center;
+            color: $hr_accent;
+            
+        }
+        .nav-item-container{
+            margin-left: 16px;
+            display: flex;
+            flex-direction: column;
+            color: $hr_light;
+            margin-top: 32px;
+            
+            a{
+                text-decoration: none;
+                color: $hr_light;
+            }
+            
+            .nav-item{
+                margin-bottom: 32px;
+                cursor: pointer;
+                transition: 0.2s all ease-in-out;
+                .item-name{
+                    margin-left: 8px;  
+                    cursor: pointer;
+                }
+                &:hover{
+                    color: $hr_white;
+                    border-right: 4px solid $hr_white ;
+    
+                }
+                &.selected{
+                    color: $hr_accent;
+                    border-right: 4px solid $hr_accent;
+                }
+                
+            }
+           
+            
 
+        }
     }
     .main-container{
         flex-basis: 80%;
-        background-color: blue;
         border-radius: 25px;
         background-color: $hr_light;
         margin: 8px;
+        margin-left: 0px;
     }
+
 }
